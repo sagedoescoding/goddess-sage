@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goddess Sage — One-on-One Spiritual Consultations</title>
+  <meta name="description" content="One-on-one consultations for spirituality coaching: yoga, meditation, affirmations, and conversations. Be in the presence of a goddess.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══ HERO ═══ -->
+  <header class="hero">
+    <div class="wrap">
+      <p class="hero__eyebrow">Goddess Sage <span class="sparkle">✦</span> One-on-One Consultations</p>
+      <h1 class="hero__title">Welcome to <em>my world</em>.</h1>
+      <p class="hero__sub">
+        I am Goddess Sage - a goddess, a spiritual practitioner, certified yoga instructor, and a presence you can
+        <strong>be held by</strong>. I offer one-on-one consultations for yoga, meditation,
+        affirmations, and conversations. Whether you need to unpack your life, seek spiritual
+        advice, or simply exist in the presence of a goddess - <strong>this is your space</strong>.
+      </p>
+      <a href="#booking" class="hero__cta">Make a Booking</a>
+    </div>
+  </header>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section id="services">
+    <div class="wrap">
+      <p class="section__label reveal">What I offer</p>
+      <h2 class="section__title reveal">Sessions made <em>for you</em>.</h2>
+      <p class="section__desc reveal">
+        Every session is one-on-one, held in a space of presence, care, and divine
+        attention. I guide you through what your body, mind, and spirit are asking for.
+      </p>
+
+      <div class="tiles">
+        <article class="tile reveal">
+          <span class="tile__num">01</span>
+          <h3 class="tile__title">1-on-1 Online Consultation</h3>
+          <p class="tile__desc">
+            Need someone to talk to? To unpack your life or a topic? Need advice on
+            spirituality or life in general? Or simply want to be in the presence of a
+            goddess? This is where we begin. No agenda - just presence.
+          </p>
+          <div class="tile__meta">
+            <span class="tile__price">R150</span>
+            <span class="tile__duration">20-30 min</span>
+          </div>
+        </article>
+
+        <article class="tile reveal">
+          <span class="tile__num">02</span>
+          <h3 class="tile__title">Pre-Session Online Consultation</h3>
+          <p class="tile__desc">
+            Before any yoga, meditation, or affirmations session, we talk. We discuss what
+            you want to work on - physically, energetically, spiritually - so that I can
+            plan a session made just for you.
+          </p>
+          <div class="tile__meta">
+            <span class="tile__price">R150</span>
+            <span class="tile__duration">20–30 min</span>
+          </div>
+        </article>
+
+        <article class="tile reveal">
+          <span class="tile__num">03</span>
+          <h3 class="tile__title">1-on-1 Online Yoga / Meditation / Affirmations</h3>
+          <p class="tile__desc">
+            A guided session I have planned specifically for you, based on our consultation.
+            We work on what your body or energy needs. <em>You should not book this without
+            a prior consultation.</em>
+          </p>
+          <div class="tile__meta">
+            <span class="tile__price">R300</span>
+            <span class="tile__duration">30 min</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ BOOKING FORM ═══ -->
+  <section id="booking">
+    <div class="wrap">
+      <p class="section__label reveal">Begin here</p>
+      <h2 class="section__title reveal">Tell me what you <em>need</em>.</h2>
+      <p class="section__desc reveal">
+        Fill in the form below and I will receive it directly. I will reply to arrange
+        your session. If you are unsure which session is right for you, choose
+        "Consultation" and we will figure it out together.
+      </p>
+
+      <form
+        class="form-section reveal"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input type="hidden" name="access_key" value="7591e2a0-baa4-4973-b92c-d6b6faadb7bd">
+        <input type="hidden" name="subject" value="New Booking Request — Goddess Sage">
+        <input type="hidden" name="from_name" value="Goddess Sage Website">
+        <input type="checkbox" name="botcheck" style="display:none;">
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required placeholder="What shall I call you?">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+27 ...">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Which session calls to you?</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Choose a session…</option>
+              <option value="1-on-1 Consultation (30 min, R150)">1-on-1 Consultation — 30 min, R150</option>
+              <option value="Pre-Session Consultation (20-30 min, R150)">Pre-Session Consultation — 20–30 min, R150</option>
+              <option value="1-on-1 Yoga / Meditation / Affirmations (30 min, R300)">1-on-1 Yoga / Meditation / Affirmations — 30 min, R300</option>
+              <option value="Not sure — please advise">Not sure — please advise</option>
+            </select>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="message">What would you like me to know?</label>
+            <textarea id="message" name="message" placeholder="Tell me what you are carrying, what you are curious about, or what you hope for from this session."></textarea>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="preferred-time">Preferred day / time (optional)</label>
+            <input type="text" id="preferred-time" name="preferred_time" placeholder="e.g. weekday evenings, Saturday mornings…">
+          </div>
+
+          <div class="form-group form-group--full">
+            <button type="submit" class="form-submit">Send to Goddess Sage</button>
+          </div>
+        </div>
+
+        <p class="form-note">
+          By submitting this form, you agree to my <a href="terms.html">Terms &amp; Conditions</a>
+          and consent to me contacting you about your booking. Your information is sent
+          directly to my inbox and is never shared.
+        </p>
+      </form>
+
+      <div class="disclaimer-strip reveal">
+        <strong>Important:</strong> I am not a licensed psychologist, psychiatrist, or
+        healthcare professional. I am a certified yoga teacher and have been growing and
+        practising in my spirituality for several years, perhaps even lifetimes. These sessions are not therapy, medical
+        advice, diagnosis, or treatment. If you are in crisis, please contact a qualified
+        professional or emergency services.
+        <a href="terms.html">Read the full disclaimer →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CALENDAR ═══ -->
+  <section id="calendar">
+    <div class="wrap">
+      <p class="section__label reveal">Choose your moment</p>
+      <h2 class="section__title reveal">Find a time that <em>feels right</em>.</h2>
+      <p class="section__desc reveal">
+        Once I have received your form, or if you already know what you would like, you
+        can book a time directly below. The calendar shows my available slots.
+      </p>
+
+      <div class="calendar-wrap reveal">
+        <div class="calendar-placeholder">
+          <p>
+            <strong>Calendar coming soon.</strong><br>
+            Replace this block with your Google Calendar appointment schedule embed
+            iframe.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PAYMENT ═══ -->
+  <section id="payment">
+    <div class="wrap">
+      <p class="section__label reveal">Payment</p>
+      <h2 class="section__title reveal">When you are <em>ready</em>.</h2>
+
+      <div class="payment-card reveal">
+        <p>
+          I accept payment via <strong>PayShap</strong> — South Africa's instant
+          interbank payment system. You can pay me using my ShapID below, or by bank
+          account details if you prefer.
+        </p>
+        <p>
+          My ShapID: <span class="shapid">+27813837143</span>
+        </p>
+        <p>
+          When paying, please use your name and the session you booked as your payment
+          reference. Once payment reflects, I will confirm your session.
+        </p>
+        <p>
+          If you would like my bank account details instead, simply ask when I reply to
+          your booking. I share full details privately to keep everyone safe.
+        </p>
+
+        <h3>Tributes &amp; gifts</h3>
+        <p>
+          I also accept tributes in the form of money and gifts sent to:
+        </p>
+        <p>
+          <strong>PEP Silverton, Silverwater — P6127</strong>
+        </p>
+        <p>
+          Gifts should be addressed to Goddess Sage. If you are sending a gift, please
+          let me know by email so I can confirm receipt.
+        </p>
+
+        <p class="payment-card__fineprint">
+          PayShap is instant and irrevocable. Please double-check the details before
+          sending. Payments made are subject to my refund policy in the
+          <a href="terms.html">Terms &amp; Conditions</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span>© 2026 Goddess Sage. All rights reserved.</span>
+      <span>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:yourgoddesssage888@gmail.com">yourgoddesssage888@gmail.com</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
