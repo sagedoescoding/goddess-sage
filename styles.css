@@ -677,3 +677,90 @@ section {
 .terms__callout p:last-child {
   margin-bottom: 0;
 }
+
+/* ── BACK TO TOP ────────────────────────────────────────── */
+.to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  z-index: 50;
+
+  /* Tap target — 48px, comfortably above the 44px minimum */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--green-deep);
+  background: var(--pink);
+  border: none;
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.35),
+    0 0 24px var(--pink-glow);
+
+  /* Hidden by default */
+  opacity: 0;
+  transform: translateY(12px) scale(0.9);
+  pointer-events: none;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Visible state, toggled by script.js */
+.to-top.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.to-top:hover {
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.4),
+    0 0 40px var(--pink-glow),
+    0 0 70px rgba(249, 168, 212, 0.2);
+}
+
+.to-top:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 3px;
+}
+
+.to-top:active {
+  transform: translateY(0) scale(0.94);
+}
+
+/* Slightly larger and further from the edge on tablets and up */
+@media (min-width: 640px) {
+  .to-top {
+    right: 1.5rem;
+    bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+    width: 52px;
+    height: 52px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .to-top {
+    transition: opacity 0.2s ease;
+    transform: none;
+  }
+  .to-top.is-visible {
+    transform: none;
+  }
+  .to-top:active {
+    transform: none;
+  }
+}
