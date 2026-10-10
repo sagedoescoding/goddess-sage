@@ -1,2 +1,2 @@
-favicon
+favicon - we need one that aligns with the website
 calendar situation 
