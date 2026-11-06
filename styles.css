@@ -411,32 +411,14 @@ section {
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--white-faint);
-  background: rgba(10,31,20,0.6);
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
+  background: #fff;
 }
 
 .calendar-wrap iframe {
+  display: block;
   width: 100%;
-  min-height: 600px;
+  height: 600px;
   border: none;
-  border-radius: var(--radius);
-}
-
-.calendar-placeholder {
-  color: var(--white-dim);
-  font-size: 0.95rem;
-  line-height: 1.7;
-  max-width: 40ch;
-}
-
-.calendar-placeholder strong {
-  color: var(--pink-soft);
-  font-weight: 500;
 }
 
 /* ── PAYMENT ────────────────────────────────────────────── */
