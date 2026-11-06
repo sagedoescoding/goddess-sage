@@ -294,16 +294,15 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 0.75rem;
-  color: var(--white-dim);
-  font-size: 0.8rem;
+  color: var(--white-ghost);
+  font-size: 0.75rem;
 }
 
 .tile__price strong {
   color: var(--pink);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   white-space: nowrap;
-  text-shadow: 0 0 20px var(--pink-glow);
 }
 
 .tile__duration {
