@@ -277,18 +277,32 @@ section {
 
 .tile__meta {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--white-faint);
 }
 
+.tile__pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
 .tile__price {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  color: var(--white-dim);
+  font-size: 0.8rem;
+}
+
+.tile__price strong {
   color: var(--pink);
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
   text-shadow: 0 0 20px var(--pink-glow);
 }
 
