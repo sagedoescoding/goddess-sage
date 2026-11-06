@@ -39,11 +39,15 @@
   let ticking = false;
 
   function updateToTop() {
-    if (window.scrollY > SHOW_AFTER_PX) {
+    const shouldShow = window.scrollY > SHOW_AFTER_PX;
+
+    if (shouldShow) {
       toTop.classList.add('is-visible');
     } else {
       toTop.classList.remove('is-visible');
     }
+    toTop.setAttribute('aria-hidden', String(!shouldShow));
+    toTop.tabIndex = shouldShow ? 0 : -1;
     ticking = false;
   }
 
@@ -58,6 +62,8 @@
   updateToTop();
 
   toTop.addEventListener('click', function () {
+    toTop.blur();
+
     const prefersReducedMotion = window.matchMedia(
       '(prefers-reduced-motion: reduce)'
     ).matches;
