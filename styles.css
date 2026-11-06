@@ -118,6 +118,7 @@ section {
   line-height: 1.05;
   color: var(--white);
   margin-bottom: 1.5rem;
+  margin-inline: auto;
   max-width: 14ch;
 }
 
@@ -205,8 +206,26 @@ section {
 
 @media (min-width: 768px) {
   .tiles {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
+  }
+
+  .tile:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% - 1.5rem) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tiles {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .tile:last-child {
+    grid-column: auto;
+    justify-self: stretch;
+    width: auto;
   }
 }
 
@@ -286,6 +305,7 @@ section {
 
 .tile__pricing {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 0.25rem;
 }
