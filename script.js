@@ -62,6 +62,8 @@
   updateToTop();
 
   toTop.addEventListener('click', function () {
+    toTop.blur();
+
     const prefersReducedMotion = window.matchMedia(
       '(prefers-reduced-motion: reduce)'
     ).matches;
